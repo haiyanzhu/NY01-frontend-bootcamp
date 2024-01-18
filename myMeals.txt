@@ -1,1 +1,2 @@
 Breakfast : Cereal
+Lunch : Burger and Fries
