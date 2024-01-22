@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact form</title>
+  </head>
+  <body>
+    <h1>Contact Form</h1>
+
+    <form>
+      <div>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          name="name"
+          required
+          placeholder="put your name here"
+        />
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" required />
+      </div>
+
+      <div>
+        <label for="message">Message:</label>
+        <br />
+        <textarea name="message" cols="50" rows="4"></textarea>
+      </div>
+      <div>
+        <label for="subject">Subject:</label>
+        <input type="subject" name="subject" required />
+      </div>
+      <div>
+        <label for="phone">Phone:</label>
+        <input type="phone" name="phone" required />
+      </div>
+      <div>
+        <label for="priority">Priority:</label>
+        <select name="priority">
+          <option value="low">Low</option>
+          <option value="median">Median</option>
+          <option value="high">High</option>
+        </select>
+        <!--low, median, high-->
+      </div>
+
+      <div>
+        <label>Newsletter Subscription:</label>
+        <input type="checkbox" checked="checked" name="subscribe" /> Daily
+        Newsletter
+      </div>
+
+      <div>
+        <label>Gender:</label>
+        <select name="Gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
