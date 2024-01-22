@@ -13,13 +13,18 @@
           type="text"
           name="name"
           required
-          placeholder="put your name here"
+          placeholder="Put your name here"
         />
       </div>
 
       <div>
         <label for="email">Email:</label>
-        <input type="email" name="email" required />
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="Enter your email address"
+        />
       </div>
 
       <div>
@@ -32,8 +37,16 @@
         <input type="subject" name="subject" required />
       </div>
       <div>
-        <label for="phone">Phone:</label>
-        <input type="phone" name="phone" required />
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{10}"
+          placeholder="Enter your phone number"
+          required
+        />
+        <small>Format: 1234567890</small>
       </div>
       <div>
         <label for="priority">Priority:</label>
@@ -47,8 +60,8 @@
 
       <div>
         <label>Newsletter Subscription:</label>
-        <input type="checkbox" checked="checked" name="subscribe" /> Daily
-        Newsletter
+        <input type="radio" name="Subscription" label="YES option" /> Yes
+        <input type="radio" name="Subscription" label="NO option" /> No
       </div>
 
       <div>
