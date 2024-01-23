@@ -1,0 +1,83 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span {
+    background-color: aquamarine;
+}
+li {
+    background-color: red;
+}
+.listclass {
+    background-color: orange;   
+}
+
+#listId {
+    background-color: yellow;
+}
+li[value="list"] {
+    background-color: green;
+}
+.listclass1, .listclass2 {
+    background-color: skyblue;
+}
+ul .descendant {
+    background-color: indigo;
+    color : white;
+}
+/* Pseudo Classes */
+
+.hoverBtn:hover {
+
+    background-color: black;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+.activeBtn :active {
+    background-color: darkgray;
+    color : black;
+}
+
+.focusInput :focus {
+    background-color: chartreuse;
+    border-width: 5px;
+}
+
+.visitedLink:visited {
+    color: deeppink;
+}
+
+/* Pseudo-Element */
+.bigLetter::first-letter {
+    font-size: 40px;
+}
+.line1::first-line {
+    color: darkorange;
+}
+
+.beforeAndAfter::before {
+    content: "before";
+    color : red;
+}
+.beforeAndAfter::after {
+    content: "after";
+    color : blue;
+}
+.selectParts::selection {
+    background-color: darkmagenta;
+    color: white;
+}
+
+/* Earlier Rule (!important has the highest priority)*/
+.cascade {
+    background-color: red !important;
+}
+.cascade {
+    background-color: blue;
+    color: white;
+}
+
