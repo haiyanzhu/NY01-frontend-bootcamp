@@ -1,0 +1,29 @@
+.gridItem {
+    min-width: 20px;
+    border: 2px black solid;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    justify-content: center;
+    min-height: 100px;
+}
+
+.container {
+    background-color: brown;
+}
+
+.gridContainer {
+    display: grid;
+    /*if use specific number like 150px, it won't resize, we can also use freactions*/
+    /* grid-template-columns: auto auto auto;
+    grid-template-rows: 200px 300px; */
+    grid-template: 200px 200px / 1fr 2fr 3fr;
+}
+
+.products {
+    /*occupy certain area*/
+    grid-area: 2/2/ span 2/ span2;
+}
+
+.pricing {
+    grid-area: 2/ 1/ span 2/ span 1;
+}

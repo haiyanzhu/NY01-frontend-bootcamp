@@ -1,0 +1,148 @@
+.box-model {
+    background-color: pink;
+    border: black 5px solid;
+    margin: 20px 40px 50px;
+    padding: 40px;
+    /* 1 value = all sides 
+    2 values = top and bottom, right and left
+    3 values = top, right and left, bottom
+    4 values = top, right, bottom, left
+    */
+    border-width: 10px;
+    border-style: double;
+    border-left-style: solid;
+    border-right-color: darkblue;
+    border-radius: 15px;
+}
+
+
+.box-content {
+    width: 200px;
+    height: 200px;
+    background-color: turquoise;
+    border: 2px black solid;
+    box-sizing: content-box;
+}
+
+.box-border {
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    border: 2px black solid;
+    box-sizing: border-box;
+}
+
+/* Display Property */
+
+.block {
+    background-color: lawngreen;
+    display: block;
+    height: 100px;
+}
+
+.inline {
+    background-color: violet;
+    height: 100px;
+}
+
+.inline-block {
+    background-color: cornflowerblue;
+    display: inline-block;
+    height: 100px;
+}
+
+.static {
+    position: static;
+    background-color: limegreen;
+    width: 200px;
+    height: 50px;
+}
+/* to the static */
+.relative {
+    position: relative;
+    background-color: aquamarine;
+    width: 200px;
+    height: 50px;
+    left: 80px;
+    top: 10px;
+}
+
+/* to the parent*/
+.absolute {
+    position: absolute;
+    background-color: slateblue;
+    width: 200px;
+    height: 50px;
+    left: 80px;
+    top: 10px;
+}
+/*fixed view port*/
+.fixed {
+    background-color: orange;
+    width: 200px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+/* sticky to the uppper */
+.sticky {
+    background-color: skyblue;
+    width: 200px;
+    height: 50px;
+    position: sticky;
+    top: 10px;
+    left: 50px;
+}
+
+/* Floats */
+.float-right {
+    width: 200px;
+    height: 100px;
+    background-color: indianred;
+    float: right;
+
+}
+
+.float-left {
+    width: 200px;
+    height: 100px;
+    background-color: peru;
+    float: left;
+
+}
+
+/* clear the floating */
+.clear-floats {
+    background-color: deepskyblue;
+    clear: left;
+}
+
+/* centering Element */
+.parent-box {
+    height: 200px;
+    width: 300px;
+    background-color: rebeccapurple;
+    /*brower calculate the margin and divied it into half*/
+    margin: auto;
+
+}
+
+.center-vertical {
+    background-color: coral;
+    /*when set display as flex, then we can set align-item*/
+    display: flex;
+    /*vertically centered*/
+    align-items: center;
+}
+
+.center-horizontal-vertical {
+    background-color: firebrick;
+    display: flex;
+    align-items: center;
+    /*this line makes text(content) aligned center*/
+    text-align: center;
+    color: white;
+
+}
