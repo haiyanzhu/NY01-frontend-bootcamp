@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Grid System</title>
+    <style>
+      /* * {
+        margin: 10px;
+      } */
+      .container {
+        border: 2px black solid;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h2>Grid System</h2>
+
+    <h5>Full-width container</h5>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>This is a full-width container.</p>
+        </div>
+      </div>
+    </div>
+
+    <h5>Equal-width columns</h5>
+    <div class="container fs-2">
+      <div class="row">
+        <div class="col">
+          <p class="fs-1">Column 1</p>
+        </div>
+        <div class="col">
+          <p>Column 2</p>
+        </div>
+        <div class="col">
+          <p>Column 3</p>
+        </div>
+      </div>
+    </div>
+
+    <h5>Different width columns</h5>
+    <div class="container">
+      <!-- each row has 12 units, if the total units exceeds 12, then it will automatically adapts to the next row -->
+      <div class="row">
+        <div class="col-6">
+          <p><mark> mark Half-width column</mark></p>
+        </div>
+        <div class="col-3 d">
+          <p>One-fourth-width column</p>
+        </div>
+        <div class="col-3">
+          <p>One-fourth-width column</p>
+        </div>
+      </div>
+    </div>
+
+    <h5>Nesting Columns</h5>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 border-top border-primary">
+          <p>Main Column</p>
+          <div class="row">
+            <div class="col border">
+              <p>Nested Column 1</p>
+            </div>
+            <div class="col border">
+              <p>Nested Column 2</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <p>Another Column</p>
+        </div>
+      </div>
+    </div>
+
+    <h5>Responsive Display Classes</h5>
+    <div class="container">
+      <div class="row">
+        <div class="d-none d-sm-block d-md-none">
+          Visible Only in Small Screens
+        </div>
+        <div class="d-none d-md-block d-lg-none">
+          Visible Only in Medium Screens
+        </div>
+        <div class="d-none d-lg-block d-xl-none">
+          Visible Only in Large Screens
+        </div>
+      </div>
+    </div>
+
+    <!-- multiple breakpoints inside one container, when this container's size change, the content will shown based on the setting; -->
+    <h5>Multiple Breakpoints</h5>
+    <div class="container">
+      <div class="row">
+        <!-- //when change the screen to small size, it used 6 col(half of the
+        columns), but if the screen size is median, it used 4 (1/3) cols; -->
+        <div class="col-sm-6 col-md-4 col-lg-3">Content 1</div>
+        <div class="col-sm-6 col-md-4 col-lg-3">Content 2</div>
+        <div class="col-sm-6 col-md-4 col-lg-3">Content 3</div>
+        <div class="col-sm-6 col-md-4 col-lg-3">Content 4</div>
+      </div>
+    </div>
+
+
+    <!-- show on screen or on print -->
+    <h5>D-Print</h5>
+    <div class="container">
+      <!-- only show on creen, do not show on print -->
+      <div class="d-print-none">Screen Only (Hide on print only)</div>
+      <div class="d-none d-print-block">Print Only (Hide on screen only)</div>
+      <div class="d-none d-lg-block d-print-block">
+        Hide up to large on screen, but always show on print
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
