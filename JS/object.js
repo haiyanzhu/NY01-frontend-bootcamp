@@ -43,6 +43,7 @@ console.log('check point!')
 //Object Destructuring;
 
 
-const [a, b] = person;
-//const {firstname, lastname, age} = person;
-console.log("!!!", fn);
+const { firstName, lastName, age } = person;
+console.log(firstName, lastName, age);
+
+console.log(person.hobbies);
