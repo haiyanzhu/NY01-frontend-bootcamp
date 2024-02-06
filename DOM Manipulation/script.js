@@ -12,6 +12,7 @@ const heading = document.getElementsByTagName('h1');
 console.log(heading);
 
 const listItems = document.querySelectorAll('#list li')
+console.log(listItems);
 
 console.log(listItems[1]);
 
@@ -40,6 +41,8 @@ const newParagraph = document.createElement('p')
 newParagraph.textContent = 'This is a new paragraph.'
 
 //how to add more child to the container ?
+
+console.log(`logout the : ${container}`);
 container[0].appendChild(newParagraph);
 
 //remove elements dynamically

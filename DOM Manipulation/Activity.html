@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity</title>
+  </head>
+  <body>
+    <!-- this is used to show the result -->
+    <div id="myDiv"></div>
+
+    <form id="myForm">
+      <label for="number">Enter a Number:</label>
+
+      <input
+      type="text"
+      id="number"
+      name="quantity"
+      inputmode="numeric"
+      oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+    />
+
+
+    </form>
+
+    <button id="myBtn">Check Number</button>
+
+    <script src="Activity.js"></script>
+  </body>
+</html>
+ 
